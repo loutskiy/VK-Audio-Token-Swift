@@ -137,5 +137,5 @@ This code makes it possible to obtain VK token, that works for VK audio API, so 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency "Alamofire", "~> 4.8.0"
   spec.dependency "ObjectMapper" 
-
+spec.swift_version = "5.0"
 end
