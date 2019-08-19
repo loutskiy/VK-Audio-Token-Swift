@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		478D9FE7A654A476CA700DE3 /* Pods_VKToken_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCED614E3958267E1B1E7FA /* Pods_VKToken_iOS.framework */; };
+		8D7E1BC16D5A36AD66B5F9E2 /* Pods_VKAudioToken.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688B484010C60A448924BDE6 /* Pods_VKAudioToken.framework */; };
+		C43F13F2230ABFB300386928 /* VKAudioToken.h in Headers */ = {isa = PBXBuildFile; fileRef = C43F13F0230ABFB300386928 /* VKAudioToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C43F13F9230AC02800386928 /* CommonParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F13F8230AC02800386928 /* CommonParams.swift */; };
+		C43F13FF230AD1D000386928 /* SupportedClients.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F13FE230AD1D000386928 /* SupportedClients.swift */; };
+		C43F1401230AD20800386928 /* VkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F1400230AD20800386928 /* VkClient.swift */; };
+		C43F1403230AD36D00386928 /* TokenReceiverOfficial.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F1402230AD36D00386928 /* TokenReceiverOfficial.swift */; };
+		C43F1405230ADBE100386928 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F1404230ADBE100386928 /* MD5.swift */; };
+		C43F1407230ADCCC00386928 /* Dictionary+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F1406230ADCCC00386928 /* Dictionary+extension.swift */; };
+		C43F141B230AE09500386928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F141A230AE09500386928 /* AppDelegate.swift */; };
+		C43F141D230AE09500386928 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F141C230AE09500386928 /* ViewController.swift */; };
+		C43F1420230AE09500386928 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C43F141E230AE09500386928 /* Main.storyboard */; };
+		C43F1422230AE09800386928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C43F1421230AE09800386928 /* Assets.xcassets */; };
+		C43F1425230AE09800386928 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C43F1423230AE09800386928 /* LaunchScreen.storyboard */; };
+		C43F142A230AE0A400386928 /* VKAudioToken.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43F13ED230ABFB300386928 /* VKAudioToken.framework */; };
+		C43F142B230AE0A400386928 /* VKAudioToken.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C43F13ED230ABFB300386928 /* VKAudioToken.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C43F1430230AE2CA00386928 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F142F230AE2CA00386928 /* TokenModel.swift */; };
+		C43F1434230AF18900386928 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F1433230AF18900386928 /* ErrorModel.swift */; };
+		C43F1436230AF3D000386928 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43F1435230AF3D000386928 /* ResponseModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C43F142C230AE0A400386928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C43F13E4230ABFB300386928 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C43F13EC230ABFB300386928;
+			remoteInfo = VKAudioToken;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C43F142E230AE0A400386928 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C43F142B230AE0A400386928 /* VKAudioToken.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		16F6502175840C3D920B5FEC /* Pods-VKAudioToken.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKAudioToken.debug.xcconfig"; path = "Target Support Files/Pods-VKAudioToken/Pods-VKAudioToken.debug.xcconfig"; sourceTree = "<group>"; };
+		688B484010C60A448924BDE6 /* Pods_VKAudioToken.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKAudioToken.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FCED614E3958267E1B1E7FA /* Pods_VKToken_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKToken_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A136B08F7AC51CCBC812C3AE /* Pods-VKAudioToken.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKAudioToken.release.xcconfig"; path = "Target Support Files/Pods-VKAudioToken/Pods-VKAudioToken.release.xcconfig"; sourceTree = "<group>"; };
+		C43F13ED230ABFB300386928 /* VKAudioToken.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VKAudioToken.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43F13F0230ABFB300386928 /* VKAudioToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKAudioToken.h; sourceTree = "<group>"; };
+		C43F13F1230ABFB300386928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C43F13F8230AC02800386928 /* CommonParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonParams.swift; sourceTree = "<group>"; };
+		C43F13FE230AD1D000386928 /* SupportedClients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedClients.swift; sourceTree = "<group>"; };
+		C43F1400230AD20800386928 /* VkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkClient.swift; sourceTree = "<group>"; };
+		C43F1402230AD36D00386928 /* TokenReceiverOfficial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenReceiverOfficial.swift; sourceTree = "<group>"; };
+		C43F1404230ADBE100386928 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		C43F1406230ADCCC00386928 /* Dictionary+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+extension.swift"; sourceTree = "<group>"; };
+		C43F1418230AE09400386928 /* VKToken_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKToken_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43F141A230AE09500386928 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C43F141C230AE09500386928 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C43F141F230AE09500386928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C43F1421230AE09800386928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C43F1424230AE09800386928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C43F1426230AE09800386928 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C43F142F230AE2CA00386928 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModel.swift; sourceTree = "<group>"; };
+		C43F1433230AF18900386928 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		C43F1435230AF3D000386928 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		D2552028623BF829F5E80417 /* Pods-VKToken_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKToken_iOS.debug.xcconfig"; path = "Target Support Files/Pods-VKToken_iOS/Pods-VKToken_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F0A394E2F5679C16921832B6 /* Pods-VKToken_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKToken_iOS.release.xcconfig"; path = "Target Support Files/Pods-VKToken_iOS/Pods-VKToken_iOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C43F13EA230ABFB300386928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D7E1BC16D5A36AD66B5F9E2 /* Pods_VKAudioToken.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C43F1415230AE09400386928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C43F142A230AE0A400386928 /* VKAudioToken.framework in Frameworks */,
+				478D9FE7A654A476CA700DE3 /* Pods_VKToken_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13C4887AC62D6C5FB790AE83 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16F6502175840C3D920B5FEC /* Pods-VKAudioToken.debug.xcconfig */,
+				A136B08F7AC51CCBC812C3AE /* Pods-VKAudioToken.release.xcconfig */,
+				D2552028623BF829F5E80417 /* Pods-VKToken_iOS.debug.xcconfig */,
+				F0A394E2F5679C16921832B6 /* Pods-VKToken_iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		556F64F16967DE09C642ADD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				688B484010C60A448924BDE6 /* Pods_VKAudioToken.framework */,
+				8FCED614E3958267E1B1E7FA /* Pods_VKToken_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C43F13E3230ABFB300386928 = {
+			isa = PBXGroup;
+			children = (
+				C43F13EF230ABFB300386928 /* VKAudioToken */,
+				C43F1419230AE09500386928 /* VKToken_iOS */,
+				C43F13EE230ABFB300386928 /* Products */,
+				13C4887AC62D6C5FB790AE83 /* Pods */,
+				556F64F16967DE09C642ADD0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C43F13EE230ABFB300386928 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C43F13ED230ABFB300386928 /* VKAudioToken.framework */,
+				C43F1418230AE09400386928 /* VKToken_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C43F13EF230ABFB300386928 /* VKAudioToken */ = {
+			isa = PBXGroup;
+			children = (
+				C43F13F0230ABFB300386928 /* VKAudioToken.h */,
+				C43F13F8230AC02800386928 /* CommonParams.swift */,
+				C43F13FE230AD1D000386928 /* SupportedClients.swift */,
+				C43F1400230AD20800386928 /* VkClient.swift */,
+				C43F1402230AD36D00386928 /* TokenReceiverOfficial.swift */,
+				C43F1404230ADBE100386928 /* MD5.swift */,
+				C43F1406230ADCCC00386928 /* Dictionary+extension.swift */,
+				C43F142F230AE2CA00386928 /* TokenModel.swift */,
+				C43F1433230AF18900386928 /* ErrorModel.swift */,
+				C43F1435230AF3D000386928 /* ResponseModel.swift */,
+				C43F13F1230ABFB300386928 /* Info.plist */,
+			);
+			path = VKAudioToken;
+			sourceTree = "<group>";
+		};
+		C43F1419230AE09500386928 /* VKToken_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C43F141A230AE09500386928 /* AppDelegate.swift */,
+				C43F141C230AE09500386928 /* ViewController.swift */,
+				C43F141E230AE09500386928 /* Main.storyboard */,
+				C43F1421230AE09800386928 /* Assets.xcassets */,
+				C43F1423230AE09800386928 /* LaunchScreen.storyboard */,
+				C43F1426230AE09800386928 /* Info.plist */,
+			);
+			path = VKToken_iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C43F13E8230ABFB300386928 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C43F13F2230ABFB300386928 /* VKAudioToken.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C43F13EC230ABFB300386928 /* VKAudioToken */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C43F13F5230ABFB300386928 /* Build configuration list for PBXNativeTarget "VKAudioToken" */;
+			buildPhases = (
+				C98C02201A862288F1BA95A8 /* [CP] Check Pods Manifest.lock */,
+				C43F13E8230ABFB300386928 /* Headers */,
+				C43F13E9230ABFB300386928 /* Sources */,
+				C43F13EA230ABFB300386928 /* Frameworks */,
+				C43F13EB230ABFB300386928 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VKAudioToken;
+			productName = VKAudioToken;
+			productReference = C43F13ED230ABFB300386928 /* VKAudioToken.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C43F1417230AE09400386928 /* VKToken_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C43F1427230AE09800386928 /* Build configuration list for PBXNativeTarget "VKToken_iOS" */;
+			buildPhases = (
+				14F2206F2A97CAAFA0574990 /* [CP] Check Pods Manifest.lock */,
+				C43F1414230AE09400386928 /* Sources */,
+				C43F1415230AE09400386928 /* Frameworks */,
+				C43F1416230AE09400386928 /* Resources */,
+				C43F142E230AE0A400386928 /* Embed Frameworks */,
+				63E9ED6C23181E9C9A2CEB90 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C43F142D230AE0A400386928 /* PBXTargetDependency */,
+			);
+			name = VKToken_iOS;
+			productName = VKToken_iOS;
+			productReference = C43F1418230AE09400386928 /* VKToken_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C43F13E4230ABFB300386928 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Mikhail Lutskii";
+				TargetAttributes = {
+					C43F13EC230ABFB300386928 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+					C43F1417230AE09400386928 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = C43F13E7230ABFB300386928 /* Build configuration list for PBXProject "VKAudioToken" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C43F13E3230ABFB300386928;
+			productRefGroup = C43F13EE230ABFB300386928 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C43F13EC230ABFB300386928 /* VKAudioToken */,
+				C43F1417230AE09400386928 /* VKToken_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C43F13EB230ABFB300386928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C43F1416230AE09400386928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C43F1425230AE09800386928 /* LaunchScreen.storyboard in Resources */,
+				C43F1422230AE09800386928 /* Assets.xcassets in Resources */,
+				C43F1420230AE09500386928 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14F2206F2A97CAAFA0574990 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VKToken_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63E9ED6C23181E9C9A2CEB90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VKToken_iOS/Pods-VKToken_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VKToken_iOS/Pods-VKToken_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VKToken_iOS/Pods-VKToken_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C98C02201A862288F1BA95A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VKAudioToken-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C43F13E9230ABFB300386928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C43F1405230ADBE100386928 /* MD5.swift in Sources */,
+				C43F1430230AE2CA00386928 /* TokenModel.swift in Sources */,
+				C43F13FF230AD1D000386928 /* SupportedClients.swift in Sources */,
+				C43F1407230ADCCC00386928 /* Dictionary+extension.swift in Sources */,
+				C43F13F9230AC02800386928 /* CommonParams.swift in Sources */,
+				C43F1401230AD20800386928 /* VkClient.swift in Sources */,
+				C43F1434230AF18900386928 /* ErrorModel.swift in Sources */,
+				C43F1403230AD36D00386928 /* TokenReceiverOfficial.swift in Sources */,
+				C43F1436230AF3D000386928 /* ResponseModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C43F1414230AE09400386928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C43F141D230AE09500386928 /* ViewController.swift in Sources */,
+				C43F141B230AE09500386928 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C43F142D230AE0A400386928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C43F13EC230ABFB300386928 /* VKAudioToken */;
+			targetProxy = C43F142C230AE0A400386928 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C43F141E230AE09500386928 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C43F141F230AE09500386928 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C43F1423230AE09800386928 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C43F1424230AE09800386928 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C43F13F3230ABFB300386928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C43F13F4230ABFB300386928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C43F13F6230ABFB300386928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16F6502175840C3D920B5FEC /* Pods-VKAudioToken.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8YBKQD6YZD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = VKAudioToken/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.lwts.VKAudioToken;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C43F13F7230ABFB300386928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A136B08F7AC51CCBC812C3AE /* Pods-VKAudioToken.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8YBKQD6YZD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = VKAudioToken/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.lwts.VKAudioToken;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C43F1428230AE09800386928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2552028623BF829F5E80417 /* Pods-VKToken_iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YBKQD6YZD;
+				INFOPLIST_FILE = VKToken_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.lwts.VKToken-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C43F1429230AE09800386928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0A394E2F5679C16921832B6 /* Pods-VKToken_iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YBKQD6YZD;
+				INFOPLIST_FILE = VKToken_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.lwts.VKToken-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C43F13E7230ABFB300386928 /* Build configuration list for PBXProject "VKAudioToken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C43F13F3230ABFB300386928 /* Debug */,
+				C43F13F4230ABFB300386928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C43F13F5230ABFB300386928 /* Build configuration list for PBXNativeTarget "VKAudioToken" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C43F13F6230ABFB300386928 /* Debug */,
+				C43F13F7230ABFB300386928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C43F1427230AE09800386928 /* Build configuration list for PBXNativeTarget "VKToken_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C43F1428230AE09800386928 /* Debug */,
+				C43F1429230AE09800386928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C43F13E4230ABFB300386928 /* Project object */;
+}

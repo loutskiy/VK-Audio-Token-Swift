@@ -1,0 +1,6 @@
+framework module Pods_VKToken_iOS {
+  umbrella header "Pods-VKToken_iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
